@@ -1,0 +1,224 @@
+```css
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    min-height: 100vh;
+}
+
+/* BACKGROUND */
+
+.background {
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 20px;
+
+    background:
+        linear-gradient(
+            rgba(10, 20, 35, 0.88),
+            rgba(10, 20, 35, 0.92)
+        ),
+        url("background.jpg");
+
+    background-size: cover;
+    background-position: center;
+}
+
+
+/* LOGIN CONTAINER */
+
+.login-container {
+    width: 100%;
+    max-width: 450px;
+
+    text-align: center;
+
+    color: white;
+}
+
+
+/* LOGO */
+
+.logo-container {
+    margin-bottom: 15px;
+}
+
+.logo {
+    width: 90px;
+    height: 90px;
+
+    object-fit: contain;
+
+    filter: drop-shadow(0 5px 10px rgba(0,0,0,0.4));
+}
+
+
+/* TAJUK */
+
+h1 {
+    font-size: 27px;
+    letter-spacing: 2px;
+    margin-bottom: 8px;
+}
+
+.school-name {
+    font-size: 13px;
+    letter-spacing: 1px;
+    opacity: 0.85;
+}
+
+.description {
+    margin-top: 15px;
+    margin-bottom: 25px;
+
+    font-size: 14px;
+    opacity: 0.75;
+}
+
+
+/* LOGIN BOX */
+
+.login-box {
+    background: rgba(255, 255, 255, 0.97);
+
+    color: #222;
+
+    padding: 30px;
+
+    border-radius: 18px;
+
+    box-shadow:
+        0 20px 50px rgba(0,0,0,0.35);
+
+    text-align: left;
+}
+
+.login-box h2 {
+    text-align: center;
+
+    margin-bottom: 25px;
+
+    font-size: 22px;
+}
+
+
+/* INPUT */
+
+.input-group {
+    margin-bottom: 18px;
+}
+
+.input-group label {
+    display: block;
+
+    font-size: 14px;
+    font-weight: bold;
+
+    margin-bottom: 7px;
+}
+
+.input-group input {
+    width: 100%;
+
+    padding: 13px 15px;
+
+    border: 1px solid #ddd;
+
+    border-radius: 9px;
+
+    font-size: 14px;
+
+    outline: none;
+
+    transition: 0.3s;
+}
+
+.input-group input:focus {
+    border-color: #1e3a5f;
+
+    box-shadow:
+        0 0 0 3px rgba(30,58,95,0.12);
+}
+
+
+/* BUTTON */
+
+.login-button {
+    width: 100%;
+
+    padding: 14px;
+
+    border: none;
+
+    border-radius: 9px;
+
+    background: #1e3a5f;
+
+    color: white;
+
+    font-size: 15px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.login-button:hover {
+    background: #142943;
+
+    transform: translateY(-1px);
+}
+
+
+/* MESSAGE */
+
+#message {
+    text-align: center;
+
+    margin-top: 15px;
+
+    font-size: 14px;
+
+    min-height: 20px;
+}
+
+
+/* SECURITY TEXT */
+
+.security {
+    margin-top: 20px;
+
+    font-size: 12px;
+
+    opacity: 0.65;
+}
+
+
+/* MOBILE */
+
+@media (max-width: 500px) {
+
+    h1 {
+        font-size: 22px;
+    }
+
+    .login-box {
+        padding: 25px 20px;
+    }
+
+    .logo {
+        width: 75px;
+        height: 75px;
+    }
+}
+```
