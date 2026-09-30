@@ -1,7 +1,8 @@
 ```javascript
 function login() {
 
-    // AMBIL NILAI INPUT
+    // Ambil maklumat daripada borang
+
     const username =
         document.getElementById("username").value.trim();
 
@@ -12,27 +13,33 @@ function login() {
         document.getElementById("message");
 
 
-    // CONTOH AKAUN PENTADBIR
-    // INI HANYA UNTUK PROTOTAIP
+    // ================================
+    // AKAUN PENTADBIR
+    // ================================
 
-    const adminUsername = "admin";
-    const adminPassword = "sakti123";
+    const ADMIN_USERNAME = "admin";
+
+    const ADMIN_PASSWORD = "sakti123";
 
 
+    // ================================
     // SEMAK LOGIN
+    // ================================
 
     if (
-        username === adminUsername &&
-        password === adminPassword
+        username === ADMIN_USERNAME &&
+        password === ADMIN_PASSWORD
     ) {
 
         message.style.color = "green";
 
         message.innerHTML =
-            "✓ Log masuk berjaya. Membuka sistem...";
+            "✓ Log masuk berjaya. Sila tunggu...";
 
 
-        // TUNGGU SEKEJAP SEBELUM REDIRECT
+        // ================================
+        // LINK SISTEM PEMANTAUAN PUAN
+        // ================================
 
         setTimeout(function () {
 
@@ -50,5 +57,6 @@ function login() {
             "✕ ID pengguna atau kata laluan tidak betul.";
 
     }
+
 }
 ```
